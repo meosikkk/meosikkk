@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="배움과 실험을 통해 성장하는 주니어 AI 엔지니어의 소개 페이지입니다.">
+  <title>AI Engineer | meosikkk</title>
+  <style>
+    :root { color-scheme: dark; --bg: #090c14; --panel: #111724; --text: #f2f5fa; --muted: #a0aabd; --accent: #9ef0ce; --line: #273043; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+    .wrap { width: min(1100px, calc(100% - 48px)); margin: auto; }
+    header { border-bottom: 1px solid var(--line); }
+    nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo { font-weight: 800; letter-spacing: -.04em; font-size: 1.15rem; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; color: var(--muted); font-size: .9rem; }
+    .nav-links a:hover, .text-link:hover { color: var(--accent); }
+    .hero { padding: 130px 0 120px; position: relative; overflow: hidden; }
+    .hero::after { content: ""; position: absolute; width: 440px; height: 440px; right: -80px; top: 30px; border-radius: 50%; background: radial-gradient(circle, rgba(86, 204, 167, .14), transparent 68%); pointer-events: none; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--accent); font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 14px var(--accent); }
+    h1 { max-width: 800px; margin: 25px 0; font-size: clamp(2.7rem, 7vw, 5.4rem); line-height: 1.14; letter-spacing: -.055em; }
+    h1 span { color: var(--accent); }
+    .intro { max-width: 610px; color: var(--muted); font-size: 1.08rem; word-break: keep-all; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 36px; }
+    .button { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 0 21px; border: 1px solid var(--line); border-radius: 7px; font-size: .9rem; font-weight: 700; }
+    .button.primary { background: var(--accent); border-color: var(--accent); color: #092019; }
+    .button:hover { transform: translateY(-2px); }
+    section.content { padding: 86px 0; border-top: 1px solid var(--line); }
+    .section-heading { display: grid; grid-template-columns: 1fr 2fr; gap: 36px; margin-bottom: 40px; }
+    .section-label { color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    h2 { margin: 0 0 12px; font-size: clamp(1.8rem, 4vw, 2.6rem); letter-spacing: -.04em; line-height: 1.25; }
+    .section-heading p, .card p { margin: 0; color: var(--muted); word-break: keep-all; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .card { min-height: 200px; padding: 26px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+    .card-number { color: var(--accent); font-size: .8rem; font-weight: 700; }
+    .card h3 { margin: 25px 0 10px; font-size: 1.08rem; }
+    .card p { font-size: .92rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag { padding: 9px 16px; border: 1px solid var(--line); border-radius: 100px; background: var(--panel); color: #d4deed; font-size: .9rem; }
+    .contact { padding: 64px; border: 1px solid #30483f; border-radius: 12px; background: linear-gradient(120deg, #14251f, #111724 70%); }
+    .contact p { max-width: 580px; color: var(--muted); word-break: keep-all; }
+    footer { padding: 30px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
+    @media (max-width: 700px) { .wrap { width: min(100% - 36px, 1100px); } nav { min-height: 68px; } .nav-links { gap: 14px; font-size: .8rem; } .hero { padding: 90px 0; } .section-heading { grid-template-columns: 1fr; gap: 12px; } .cards { grid-template-columns: 1fr; } .card { min-height: auto; } section.content { padding: 64px 0; } .contact { padding: 32px 24px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="주 메뉴">
+      <a class="logo" href="#top">meosikkk<span>.</span></a>
+      <div class="nav-links"><a href="#about">소개</a><a href="#interests">관심 분야</a><a href="#contact">연결하기</a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow"><span class="dot"></span> Open to opportunities</div>
+        <h1 id="hero-title">배우고, 만들고,<br><span>함께 성장합니다.</span></h1>
+        <p class="intro">안녕하세요, AI 기술로 의미 있는 문제를 해결하고 싶은 주니어 AI 엔지니어입니다. 작은 배움과 꾸준한 실험을 통해 더 나은 내일을 만들어 갑니다.</p>
+        <div class="actions"><a class="button primary" href="https://github.com/meosikkk">GitHub 방문하기 ↗</a><a class="button" href="#about">더 알아보기 ↓</a></div>
+      </section>
+
+      <section class="content" id="about">
+        <div class="section-heading"><div class="section-label">01 / About me</div><div><h2>기술을 넘어, 문제를 바라봅니다.</h2><p>새로운 기술을 배우는 즐거움과 문제를 해결하는 과정의 가치를 믿습니다. 기초부터 차근차근 쌓으며 함께 성장할 수 있는 기회를 찾고 있습니다.</p></div></div>
+        <div class="cards">
+          <article class="card"><span class="card-number">01</span><h3>꾸준한 학습</h3><p>AI와 머신러닝의 원리를 이해하고 배운 내용을 실습으로 연결합니다.</p></article>
+          <article class="card"><span class="card-number">02</span><h3>문제 해결</h3><p>데이터와 기술을 바탕으로 실제 문제를 바라보고 해결 방법을 고민합니다.</p></article>
+          <article class="card"><span class="card-number">03</span><h3>함께 성장</h3><p>Git과 GitHub를 배우며 기록하고 소통하는 개발자로 성장합니다.</p></article>
+        </div>
+      </section>
+
+      <section class="content" id="interests">
+        <div class="section-heading"><div class="section-label">02 / Learning</div><div><h2>관심을 가지고 배우고 있어요.</h2><p>아래는 관심을 가지고 학습하고자 하는 기술과 분야입니다.</p></div></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Deep Learning</span><span class="tag">Data</span><span class="tag">Git</span><span class="tag">GitHub</span></div>
+      </section>
+
+      <section class="content" id="contact">
+        <div class="contact"><div class="section-label">03 / Let's connect</div><h2>함께 성장할 기회를 찾고 있습니다.</h2><p>새로운 도전과 배움에 열려 있습니다. GitHub에서 저의 학습과 성장 과정을 만나보세요.</p><div class="actions"><a class="button primary" href="https://github.com/meosikkk">GitHub 프로필 보기 ↗</a></div></div>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap">© meosikkk · Made with curiosity and a passion for learning.</div></footer>
+</body>
+</html>
